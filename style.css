@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: rgb(25,3,97);
+    background: linear-gradient(30deg, rgba(25,3,97,1) 0%, rgba(187,0,255,1) 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+body, button{
+    font-family: 'DM Sans', sans-serif;
+}
+
+main{
+    margin-top: -5%;
+    padding: 4.8rem 6.4rem 6.4rem;
+    background-color: #FFFFFF;
+    width: min(42.8rem, 90%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 2.0rem 5.0rem rgba(0,0,0,0.8);
+}
+
+
+.hide{
+    display: none;
+}
+
+.screen01{
+    padding: 1.8rem;
+}
+main .screen01 h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+main .screen01 p{
+    margin: 1.4rem auto 2.0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+main .screen01 button{
+    height: 20.0rem;
+    width: 26.4rem;
+    background-image: url(./image/fortune-cookie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #FFFFFF;
+}
+main .screen01 button:hover{
+    animation: shake 0.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+@keyframes shake{
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, -5px); }
+    50% { transform: translate(5px, 5px); }
+    75% { transform: translate(-5px, 5px); }
+    100% { transform: translate(5px, -5px); }
+}
+
+.screen02 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+.screen02 #fraseSorte{
+    padding: 0.1rem;
+    background-color: #E4EDF1;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.40);
+    margin-bottom: 1.7rem;
+}
+.screen02 #fraseSorte p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    text-align: center;
+}
+.screen02 #btnReset{
+    margin: 1.7rem 20% 0px;
+    padding: 1.6rem;
+    background-color: #FF9500;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;    
+    font-weight: bold;
+
+    transition: background 0.3s;
+}
+#btnReset:hover{
+    background-color: #e48704;
+    cursor: pointer;
+}
+
+.animationBoxSentence{
+    animation: moveBox 1s linear;
+}
+
+@keyframes moveBox{
+    0% {
+        transform: scale(0)
+      }
+    50% {
+        transform: scale(0.5)
+      }
+    100% {
+        transform: scale(1)
+      }
+}
